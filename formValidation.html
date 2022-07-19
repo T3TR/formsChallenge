@@ -5,8 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
 <body>
-    
+    <h1>Registration Form</h1>
+    <form>
+        <div>
+            <label class="labels" for="user_id">User ID: </label>
+                <input type="text" id="user_id" placeholder="Required" minlength="7" maxlength="12" required>
+        </div>
+        <div>
+            <label class="labels" for="pass">Password: </label>
+                <input type="password" id="pass" placeholder="Required" minlength="7" maxlength="12" required>
+        </div>
+        <div>
+            <label class="labels" for="name">Name: </label>
+                <input type="text" id="name" placeholder="Required">
+        </div>
+        <div>
+            <label class="labels" for="address">Address: </label>
+                <input type="text" id="address" placeholder="Optional">
+        </div>
+        <div>
+            <label class="labels" for="country">Country: </label>
+                <select id="country" required>
+                    <option>South Africa</option>
+                    <option>United Kingdom</option>
+                    <option>United States of America</option>
+                    <option>Other</option>
+                </select>
+        </div>
+        <div>            
+            <label class="labels" for="zip">Zip Code: </label>
+                <input type="number" id="zip" placeholder="Required" minlength="4" max="99999" inputmode="numeric" required>
+        </div>
+        <div>
+            <label class="labels" for="email">Email: </label>
+                <input type="email" id="email" placeholder="Required" required>
+        </div>
+        <div>
+            <label class="labels" for="sex">Sex: </label>
+                <input type="radio" id="male" name="sex" required>
+                    <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" required>
+                    <label for="female">Female</label>
+        </div>
+        <div>
+            <label class="labels" for="language">Language: </label>
+                <input type="checkbox" id="english" name="language" required>
+                    <label for="english">English</label>
+                <input type="checkbox" id="non-english" name="language" required>
+                    <label for="non-english">Non-English</label>
+        </div>
+        <div>
+            <label class="labels" for="about">About: </label>
+                <textarea name="about" id="about" placeholder="Optional" rows="5" cols="50"></textarea>
+        </div>
+        <div>
+            <input class="submit" type="submit">
+        </div>
+    </form>
 </body>
 </html>

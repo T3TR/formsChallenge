@@ -1,0 +1,13 @@
+.labels{
+    margin-left: 5%;
+    text-align: right;
+    width: 65px;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+h1{
+    margin-left: 85px;
+}
+.submit{
+    margin-left: 150px;
+}
